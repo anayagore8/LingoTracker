@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <link rel="stylesheet" type="text/css" href="Lingo.css"/>
+     <title>LingoTracker_Project</title>
+</head>
+<style>
+.greybg{
+   background-color:gray;  
+}
+body{
+background-color:lightpink;
+}
+H1{
+text-align:center;
+
+background-color:ivory;
+height:50px;
+font-size:45px;
+font-family:"Times New Roman","Garamond", Serif;
+}
+
+H2{
+ color:ivory;
+ font-style:"Papyrus","Copperplate",Fantasy;
+ font-size:23px;
+}
+
+.mybutton{
+   font-size:30px;
+}
+form{
+  font-size:25px; 
+  font-style:"Lucida Console","Courier New", Monospace; 
+  padding:20px;
+}
+
+</style>
+
+<script>
+function response_rec(){
+  window.location.href="response.html";
+}
+
+function changeColor(inputID){
+  var inputElement=document.getElementById(inputID);
+  inputElement.classList.add("greybg");
+}
+
+function restoreColor(inputID){
+  var inputElement=document.getElementById(inputID);
+  inputElement.classList.remove("greybg");
+}
+
+</script>
+
+<body>
+<H1>Welcome to LingoTracker</H1>
+<H2>Unlock the world of language mastery with LingoTracker! Our cutting-edge app lets you assess and elevate your language skills, from speaking to writing and reading. Receive a comprehensive report showcasing your proficiency and get tailored course recommendations to supercharge your linguistic journey. With LingoTracker, fluency has never been more captivating. Start your language adventure today and embrace the power of effective communication!</H2>
+<img src="Lingo1.jpg" width="450" height="300">
+<img src="Lingo2.jpg" width="450" height="300">
+<img src="Lingo3.jpg" width="450" height="300"><br>
+<br>
+
+
+<form>
+<em>Tell us about yourself!</em> <br>
+<br>
+<label for="name"><strong>Enter your name!</strong></label><br>
+
+<input type="text" id="name" name="name" onfocus="changeColor('name')" onblur="restoreColor('name')"><br>
+<br>
+<label for="Age"><strong>What is your age?</strong></label><br>
+
+<input type="number" id="Age" name="Age" onfocus="changeColor('Age')" onblur="restoreColor('Age')"><br> 
+<br>
+Select Gender: 
+<label for="Male"><strong>Male</strong></label>
+<input type="radio" id="Male" name="gender">
+
+<label for="Female"><strong>Female</strong></label>
+<input type="radio" id="Female" name="gender">
+ 
+<label for="Other"><strong>Other</strong></label>
+<input type="radio" id="Other" name="gender"><br>
+<br>
+
+Select language:
+<select name="language" id="language">
+    <option value="English"><strong>English</strong></option>
+</select><br>
+<br>    
+ 
+Select your Nationality!
+
+<select name="nationality" id="nationality">
+    <option value="american">American</option>
+    <option value="british">British</option>
+    <option value="canadian">Canadian</option>
+    <option value="australian">Australian</option>
+    <option value="german">German</option>
+    <option value="french">French</option>
+    <option value="spanish">Spanish</option>
+    <option value="italian">Italian</option>
+    <option value="chinese">Chinese</option>
+    <option value="japanese">Japanese</option>
+    <option value="indian">Indian</option>
+    <option value="brazilian">Brazilian</option>
+    <option value="russian">Russian</option>
+    <option value="mexican">Mexican</option>
+    <option value="southafrican">South African</option><br>
+</select><br>
+<br>
+
+Rate the following on scale of 10 according to you!
+<br>
+<label for="reading"><strong>Reading the selected language!</strong></label>
+<input type="range" id="reading" name="reading" min="0" max="10" value="8.5">
+<label for="writing"><strong>Writing the selected language!</strong></label>
+<input type="range" id="writing" name="writing" min="0" max="10" value="8.5">
+<label for="speaking"><strong>Speaking the selected language!</strong></label>
+<input type="range" id="speaking" name="speaking" min="0" max="10" value="8.5"><br>
+<br>
+
+<H2><em>Let's take a small test!</em></H2>
+
+<strong>Q1.Choose the correct word to complete the sentence: The train ________ at 9:00 AM. <br></strong>
+<label for="leaves"><strong>leaves</strong></label>
+<input type="radio" name="q1" id="leaves"><br>
+<label for="is_leaving"><strong>is leaving</strong></label>
+<input type="radio" name="q1" id="is_leaving"><br>
+<label for="left"><strong>left</strong></label>
+<input type="radio" name="q1" id="left"><br>
+<br>
+
+<strong>Q2.Synonym for excellent.</strong> <br>
+<label for="good"><strong>superb</strong></label>
+<input type="radio" name="q2" id="good"><br>
+<label for="superb"><strong>superb</strong></label>
+<input type="radio" name="q2" id="superb"><br>
+<label for="average"><strong>average</strong></label>
+<input type="radio" name="q2" id="average"><br>
+<br>
+
+<strong>Q3.Identify the correct word to complete the sentence: The author's writing style was both eloquent and __________.</strong><br>
+<label for="mundane"><strong>mundane</strong></label>
+<input type="radio" id="mundane" name="q3"><br>
+<label for="verbose"><strong>mundane</strong></label>
+<input type="radio" id="verbose" name="q3"><br>
+<label for="succinct"><strong>succinct</strong></label>
+<input type="radio" id="succinct" name="q3"><br>
+<br>
+
+
+<strong>Reading Comprehension:<br></strong>
+
+<strong>Read the following passage and answer the given questions:<br>
+"Deep within the heart of the dense rainforest, a variety of unique and fascinating creatures call this vibrant ecosystem home. From the playful capuchin monkeys swinging through the trees to the elusive jaguars prowling the forest floor, the rainforest is a treasure trove of biodiversity. A symphony of bird songs fills the air as colorful toucans and parrots glide above, while tiny tree frogs add their melodious chorus to the cacophony of sounds. The towering trees, draped in vines and epiphytes, create a lush canopy that provides shelter for countless organisms below. Amidst the lush foliage, delicate orchids bloom, and insects of all shapes and sizes perform their vital roles in the intricate web of life. However, this delicate balance is threatened by deforestation, climate change, and human activities that encroach upon this irreplaceable habitat."</strong><br>
+<br>
+
+<strong>Q1.According to the passage, what type of creatures are known for swinging through the trees?</strong><br>
+<label for="op1"><strong>Playful capuchin monkeys</strong></label>
+<input type="radio" id="op1" name="q4"><br>
+<label for="op2"><strong>Elusive jaguars</strong></label>
+<input type="radio" id="op2" name="q4"><br>
+<label for="op3"><strong>Melodious tree frogs</strong></label>
+<input type="radio" id="op3" name="q4"><br>
+<br>
+
+<strong>Q2.What does the lush canopy created by the towering trees provide?</strong><br>
+<label for="op11"><strong>A hiding place for jaguars</strong></label>
+<input type="radio" id="op11" name="q5"><br>
+<label for="op12"><strong>A feeding ground for toucans</strong></label>
+<input type="radio" id="op12" name="q5"><br>
+<label for="op13"><strong>Shelter for various organisms</strong></label>
+<input type="radio" id="op13" name="q5"><br>
+<br>
+
+<strong>Q3.How do insects contribute to the rainforest ecosystem?</strong><br>
+<label for="op111"><strong>They swing through the trees.</strong></label>
+<input type="radio" name="q6" id="op111"><br>
+<label for="op112"><strong>They help maintain the delicate balance of life.</strong></label>
+<input type="radio" name="q6" id="op112"><br>
+<label for="op113"><strong>They create a symphony of bird songs.</strong></label>
+<input type="radio" name="q6" id="op113"><br>
+
+<br>
+
+<strong>Imagine having a coversation in selected langauge.What is your comfort and confidence level?</strong><br>
+<label for="low"><strong>low</strong></label>
+<input type="radio" name="q7" id="low"><br>
+<label for="medium"><strong>medium</strong></label>
+<input type="radio" name="q7" id="medium"><br>
+<label for="high"><strong>high</strong></label>
+<input type="radio" name="q7" id="high"><br>
+<br>
+
+<strong>Imagine watching a movie or reading a book in selected language.How well do you understand?</strong><br>
+<label for="more"><strong>Takes more time to understand</strong></label>
+<input type="radio" id="more" name="q8"><br>
+<label for="moderate"><strong>Takes moderate time to understand</strong></label>
+<input type="radio" id="moderate" name="q8"><br>
+<label for="issue"><strong>I don't have any issues</strong></label>
+<input type="radio" id="issue" name="q8"><br>
+<br>
+
+<strong><b>Please select preferred course formats:<br></b></strong>
+<label for="1"><strong>Online Interactive Courses</strong></label>
+<input type="checkbox" name="format" id="1"><br>
+<label for="2"><strong>Self-Paced E-Learning</strong></label>
+<input type="checkbox" name="format" id="2"><br>
+<label for="3"><strong>Intensive Immersion Workshops</strong></label>
+<input type="checkbox" name="format" id="3"><br>
+<label for="4"><strong>Tutoring Sessions</strong></label>
+<input type="checkbox" name="format" id="4"><br>
+<label for="5"><strong>Language Learning Apps</strong></label>
+<input type="checkbox" name="format" id="5"><br>
+<br>
+
+
+<input type="button" class="mybutton" value="submit" onclick="response_rec()">
+<input type="reset" class="mybutton" value="reset">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+
+</body>
+
+</html>
+
